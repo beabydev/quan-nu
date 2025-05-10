@@ -79,8 +79,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
-
+.sale {
+  position: absolute;
+  background-color: rgb(233, 27, 27);
+  color: #eee;
+  padding: 2px 4px;
+  top: 0;
+  right: 0;
+}
 .product-title {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -92,7 +100,12 @@ body {
   color: #e44d26;
   margin-bottom: 15px;
 }
-
+.product-price del {
+  opacity: 0.7;
+  padding-left: 9px;
+  font-size: small;
+  color: #333;
+}
 .product-price .price {
   font-weight: bold;
 }
@@ -103,8 +116,8 @@ body {
   margin-bottom: 20px;
 }
 
-.product-actions button {
-  background-color: #5cb85c;
+.product-actions a {
+  background-color: #e44d26;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -113,14 +126,15 @@ body {
   font-size: 1em;
   transition: background-color 0.3s ease;
   margin-right: 10px;
+  text-decoration: none;
 }
 
-.product-actions button:hover {
+.product-actions a:hover {
   background-color: #4cae4c;
 }
 
 .product-actions .view-details {
-  background-color: #007bff;
+  background-color: #4cae4c;
 }
 
 .product-actions .view-details:hover {
